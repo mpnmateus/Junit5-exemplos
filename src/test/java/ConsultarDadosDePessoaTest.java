@@ -15,12 +15,10 @@ public class ConsultarDadosDePessoaTest {
     void insereDadosParaTeste(){
         BancoDeDados.insereDados(new Pessoa("João", LocalDateTime.of(2000, 1, 1, 13, 0)));
     }
-
     @AfterEach
     void removeDadosParaTeste(){
         BancoDeDados.removeDados(new Pessoa("João", LocalDateTime.of(2000, 1, 1, 13, 0)));
     }
-
 
     @Test
     void validarDadosDeRetorno(){

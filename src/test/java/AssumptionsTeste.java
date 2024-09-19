@@ -9,4 +9,10 @@ public class AssumptionsTeste {
         Assumptions.assumeFalse("root".equals(System.getenv("USER")));
         Assertions.assertEquals(10, 5 + 5);
     }
+
+    @Test
+    void validarAlgoSomenteNoUsuarioMateus2() {
+        Assumptions.assumeTrue("mateusnovo".equals(System.getenv("USER")));
+        Assertions.assertEquals(10, 5 + 5);
+    }
 }
