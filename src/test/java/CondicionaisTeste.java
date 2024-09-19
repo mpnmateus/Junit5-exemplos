@@ -28,4 +28,10 @@ public class CondicionaisTeste {
         Assertions.assertEquals(10, 5 + 5);
     }
 
+    @Test
+    @EnabledOnOs({OS.WINDOWS, OS.LINUX, OS.OTHER})
+    void validarAlgoSomenteNoSistemaOpQualquer () {
+        Assertions.assertEquals(10, 5 + 5);
+    }
+
 }
